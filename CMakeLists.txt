@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 2.8.4)
-project(untitled1)
+project(untitled)
 
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c11")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c90 ")
 
-set(SOURCE_FILES main.cpp)
-add_executable(untitled1 ${SOURCE_FILES})
+set(SOURCE_FILES main.c)
+add_executable(untitled ${SOURCE_FILES})
+target_link_libraries(untitled m)
