@@ -2,7 +2,7 @@
 #include <math.h>
 
 int main() {
-    float G, F, Y, x, a;
+    double G, F, Y, x, a;
     const double pi = 3.14;
     scanf("%f", &x);
     scanf("%f", &a);
