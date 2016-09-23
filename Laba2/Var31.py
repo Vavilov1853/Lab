@@ -12,14 +12,10 @@ if z == "G":
 elif z == "Y":
     Y = math.atan(30 * a ** 2 + 37 * a * x - 4 * x ** 2) * -1
     if Y:
-        Y_fun = math.atan(Y)
-    print("Y =", Y)
+        print("Y =", Y)
 
 elif z == "F":
     F = math.sinh(3 * a ** 2 + 7 * a * x + 4 * x ** 2)
     if F:
-        F_fun = math.sin(F)
         print("F =", F)
-    else: print("Не существует синуса к заданной функции")
-else:
-    print("Введите букву функции, которую xотите вычислить")
+    else: print("Не существует значения")
