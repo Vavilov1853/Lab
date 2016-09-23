@@ -6,7 +6,7 @@ int main() {
     char r;
     scanf("%f", &x);
     scanf("%f", &a);
-    printf("Введите букву - G,F,Y) \n");
+    printf("Введите букву - G,F,Y \n");
     scanf("%s", &r);
 
     switch (r) {
