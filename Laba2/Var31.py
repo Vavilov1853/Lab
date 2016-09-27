@@ -1,5 +1,5 @@
 import math
-pi=3.14
+
 x = int(input("Введите x:"))
 a = int(input("Введите a:"))
 z = str(input("Введите букву,которую xотите вычислить"))
