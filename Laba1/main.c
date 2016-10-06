@@ -10,9 +10,9 @@ int main() {
     F = sinh(3 * pow(a, 2) + 7 * a * x + 4 * pow(x, 2));
     Y = tanh(30 * pow(a, 2) + 37 * a * x - 4 * pow(x, 2));
 
-    printf("%1.3f\n", G);
-    printf("%1.3f\n", F);
-    printf("%1.3f\n", Y);
+    printf("%f\n", G);
+    printf("%f\n", F);
+    printf("%f\n", Y);
 
     return 0;
 }
