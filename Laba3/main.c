@@ -28,7 +28,7 @@ int main() {
     switch (r) {
         case 1:
             for (; x < x2; x = x + b) {
-                if ((G <= 0) || (G >= 0)) {
+                if ((G <= 0.00001) || (G >= 0.00001)) { 
                     G = ((5 * (10 * pow(a, 2) - 11 * a * x + pow(x, 2))) /
                          (24 * pow(a, 2) - 49 * a * x + 4 * pow(x, 2)));
                     printf("%lf \n", G);
@@ -44,11 +44,18 @@ int main() {
             break;
         case 3 :
             for (; x <= x2; x = x + b) {
-                if ((-1 < Y) || (Y < 1)) {
+                if ((Y > -1) && (Y < 1)) {
                     Y = tan(30 * pow(a, 2) + 37 * a * x - 4 * pow(x, 2));
                 } else printf("%s\n", "При данном значение Y выполнение функции невозможно");
                 printf("Y = %lf \n", Y);
             }
+            break;
+        default:
+            printf("%s\n", "Для выполнения действия напишите 1,2 или 3");
+
+            return 0;
+    }
+}
             break;
         default:
             printf("%s\n", "Для выполнения действия напишите 1,2 или 3");
