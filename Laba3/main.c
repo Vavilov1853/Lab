@@ -1,20 +1,19 @@
 #include <stdio.h>
 #include <math.h>
-
 int main() {
-    double G, F, Y, x, a, x2, b;
+    double G, F, Y, x, a, x2, b ;
     int r;
-
+    int change;
+    Metka:
     printf("%s", "Введите  x: ");
     scanf("%lf", &x);
     getchar();
 
-    printf("%s", "Введите a: ");
-    scanf("%lf", &a);
-    getchar();
-
     printf("%s", "Введите x2 ");
     scanf("%lf", &x2);
+    getchar();
+    printf("%s", "Введите a: ");
+    scanf("%lf", &a);
     getchar();
 
     printf("%s", "Введите параметр шага  ");
@@ -35,25 +34,37 @@ int main() {
                 } else printf("%s\n", "При данном значение G выполнение функции невозможно");
 
             }
+            printf("Если желаете посчитать другую функцию введите 1 \n");
+            scanf("%d",& change);
+            getchar();
+            if (change == 1)
+                goto Metka;
             break;
-        Metka:
         case 2:
             for (; x >= x2; x = x - b) {
                 F = sin(3 * pow(a, 2) + 7 * a * x + 4 * pow(x, 2));
                 printf("%lf \n", F);
+
+                printf("Если желаете посчитать другую функцию введите 1 \n");
+                scanf("%d",& change);
+                getchar();
+                if (change == 1)
+                    goto Metka;
             }
-            if()
-
-                printf("%s" 'Введите 3 если хотите запустить заново' );
-            goto Metka;
-
-         case 3 :
+            break;
+        case 3 :
             for (; x <= x2; x = x + b) {
                 if ((Y > -1) && (Y < 1)) {
                     Y = tan(30 * pow(a, 2) + 37 * a * x - 4 * pow(x, 2));
                 } else printf("%s\n", "При данном значение Y выполнение функции невозможно");
                 printf("%lf \n", Y);
             }
+
+            printf("Если желаете посчитать другую функцию введите 1 \n");
+            scanf("%d",& change);
+            getchar();
+            if (change == 1)
+                goto Metka;
             break;
         default:
             printf("%s\n", "Для выполнения действия напишите 1,2 или 3");
