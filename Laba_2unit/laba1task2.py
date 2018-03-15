@@ -1,4 +1,3 @@
-
 number = float(input('Введите желаемое число = '))
 sqrt = number
 while sqrt * sqrt != number:
