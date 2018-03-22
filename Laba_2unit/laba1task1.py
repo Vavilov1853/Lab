@@ -4,7 +4,7 @@ while True:
     try:
         number = float(input('Введите число = '))
     except ValueError:
-        print('Повелитель вы ввели неверный символ попробуйте еще раз =)')
+        print('Повелитель вы ввели неверный символ попробуйте еще раз =)')      #Проверка на правельность ввода данных#
         continue
     try:
         number1 = float(input('Введите число = '))
@@ -13,7 +13,7 @@ while True:
         continue
     operation = str(input('Твое желание и я повинуюсь +,-,*,/ = '))
 
-    if operation == '+':
+    if operation == '+':                                                ##
         summ = number + number1
         print("Твой результат гоподин = ",summ)
 

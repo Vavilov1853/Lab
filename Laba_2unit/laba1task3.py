@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt ,math
 import numpy as np
 from random import random
 
-
 def calSma(data_input: np.array, period: int):
     data_output = []
     for i in range(period):
