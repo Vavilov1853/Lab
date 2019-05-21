@@ -4,22 +4,22 @@ public class Calculator {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int a = getInt();
-        int b = getInt();
+        float a = getFloat();
+        float b = getFloat();
         char operation = getOperation();
-        int result = calc(a,b,operation);
+        float result = calc(a,b,operation);
         System.out.println("Результат операции: " + result);
     }
 
-    public static int getInt(){
+    public static float getFloat(){
         System.out.println("Введите число:");
-        int num;
-        if(scanner.hasNextInt()){
-            num = scanner.nextInt();
+        float num;
+        if(scanner.hasNextFloat()){
+            num = scanner.nextFloat();
         } else {
             System.out.println("Ошибка при вводе числа. Введите число сново.");
             scanner.next();
-            num = getInt();
+            num = getFloat();
         }
         return num;
     }
@@ -37,8 +37,8 @@ public class Calculator {
         return operation;
     }
 
-    public static int calc(int a, int b, char operation){
-        int result;
+    public static float calc(float a, float b, char operation){
+        float result;
         switch (operation){
             case '+':
                 result = a + b;
