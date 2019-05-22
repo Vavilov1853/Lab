@@ -12,6 +12,6 @@ public class SQRT {
                 t = sqrt;
                 sqrt = (t + (number / t)) / 2;
             } while ((t - sqrt) != 0);
-        System.out.println("Введите число: " + sqrt);
+        System.out.println("Результат: " + sqrt);
         }
     }

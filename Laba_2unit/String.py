@@ -1,4 +1,4 @@
-import math
+#import math
 
 
 s= "CADCEEDAABDDCEEFDBADECABABCDCFDFDFBEBEEA"
@@ -40,12 +40,12 @@ P_J = j/light
 # I_J  = math.log2(1/P_J)
 
 
-H_max = math.log2(8)
+#H_max = math.log2(8)
 
-H_MSG = - P_A*math.log2(P_A) + P_B*math.log2(P_B) + P_C*math.log2(P_C) + P_D*math.log2(P_D) + P_E*math.log2(P_E) +\
-        P_F*math.log2(P_F) + P_G*math.log2(P_G) + P_H*math.log2(P_H) + P_I*math.log2(P_I) + P_J*math.log2(P_J)
+#H_MSG = - P_A*math.log2(P_A) + P_B*math.log2(P_B) + P_C*math.log2(P_C) + P_D*math.log2(P_D) + P_E*math.log2(P_E) +\
+      #  P_F*math.log2(P_F) + P_G*math.log2(P_G) + P_H*math.log2(P_H) + P_I*math.log2(P_I) + P_J*math.log2(P_J)
 
-R_MSG = H_max - H_MSG
+#R_MSG = H_max - H_MSG
 
 print(a)
 print(b)
@@ -53,7 +53,7 @@ print(c)
 print(d)
 print(light)
 
-print(H_MSG)
-print(H_max)
-print(R_MSG)
+#print(H_MSG)
+#print(H_max)
+#print(R_MSG)
 
