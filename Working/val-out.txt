@@ -1,0 +1,83 @@
+==10233== Memcheck, a memory error detector
+==10233== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==10233== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==10233== Command: ./b64 -e test.txt
+==10233== Parent PID: 3955
+==10233== 
+--10233-- 
+--10233-- Valgrind options:
+--10233--    --tool=memcheck
+--10233--    --leak-check=full
+--10233--    --show-leak-kinds=all
+--10233--    --track-origins=yes
+--10233--    --log-file=val-out.txt
+--10233--    --verbose
+--10233-- Contents of /proc/version:
+--10233--   Linux version 4.4.0-36-generic (buildd@lgw01-20) (gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) ) #55~14.04.1-Ubuntu SMP Fri Aug 12 11:49:30 UTC 2016
+--10233-- Arch and hwcaps: AMD64, LittleEndian, amd64-rdtscp-sse3
+--10233-- Page sizes: currently 4096, max supported 4096
+--10233-- Valgrind library directory: /usr/lib/valgrind
+--10233-- Reading syms from /home/user/Lab/Working/b64
+--10233-- Reading syms from /usr/lib/valgrind/memcheck-amd64-linux
+--10233--   Considering /usr/lib/valgrind/memcheck-amd64-linux ..
+--10233--   .. CRC mismatch (computed fed8e6c5 wanted e6be554a)
+--10233--    object doesn't have a symbol table
+--10233--    object doesn't have a dynamic symbol table
+--10233-- Reading syms from /lib/x86_64-linux-gnu/ld-2.19.so
+--10233--   Considering /lib/x86_64-linux-gnu/ld-2.19.so ..
+--10233--   .. CRC mismatch (computed 502fa341 wanted 3ca2d3ca)
+--10233--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/ld-2.19.so ..
+--10233--   .. CRC is valid
+--10233-- Scheduler: using generic scheduler lock implementation.
+--10233-- Reading suppressions file: /usr/lib/valgrind/default.supp
+==10233== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-10233-by-user-on-???
+==10233== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-10233-by-user-on-???
+==10233== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-10233-by-user-on-???
+==10233== 
+==10233== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==10233== don't want to do, unless you know exactly what you're doing,
+==10233== or are doing some strange experiment):
+==10233==   /usr/lib/valgrind/../../bin/vgdb --pid=10233 ...command...
+==10233== 
+==10233== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==10233==   /path/to/gdb ./b64
+==10233== and then give GDB the following command
+==10233==   target remote | /usr/lib/valgrind/../../bin/vgdb --pid=10233
+==10233== --pid is optional if only one valgrind process is running
+==10233== 
+--10233-- REDIR: 0x3d8aa19c50 (ld-linux-x86-64.so.2:strlen) redirected to 0x380764b1 (???)
+--10233-- Reading syms from /usr/lib/valgrind/vgpreload_core-amd64-linux.so
+--10233--   Considering /usr/lib/valgrind/vgpreload_core-amd64-linux.so ..
+--10233--   .. CRC mismatch (computed 4bcdfe99 wanted 3143e841)
+--10233--    object doesn't have a symbol table
+--10233-- Reading syms from /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so
+--10233--   Considering /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so ..
+--10233--   .. CRC mismatch (computed 3df18bf1 wanted 14fefe1c)
+--10233--    object doesn't have a symbol table
+==10233== WARNING: new redirection conflicts with existing -- ignoring it
+--10233--     old: 0x3d8aa19c50 (strlen              ) R-> (0000.0) 0x380764b1 ???
+--10233--     new: 0x3d8aa19c50 (strlen              ) R-> (2007.0) 0x04a0b1a0 strlen
+--10233-- REDIR: 0x3d8aa19a00 (ld-linux-x86-64.so.2:index) redirected to 0x4a0ad50 (index)
+--10233-- REDIR: 0x3d8aa19c20 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4a0c2f0 (strcmp)
+--10233-- REDIR: 0x3d8aa1a970 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4a0eda0 (mempcpy)
+--10233-- Reading syms from /lib/x86_64-linux-gnu/libc-2.19.so
+--10233--   Considering /lib/x86_64-linux-gnu/libc-2.19.so ..
+--10233--   .. CRC mismatch (computed 447ef4f8 wanted a10d05bf)
+--10233--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libc-2.19.so ..
+--10233--   .. CRC is valid
+--10233-- REDIR: 0x3d8ae8cc50 (libc.so.6:strcasecmp) redirected to 0x4802720 (_vgnU_ifunc_wrapper)
+--10233-- REDIR: 0x3d8ae8ef40 (libc.so.6:strncasecmp) redirected to 0x4802720 (_vgnU_ifunc_wrapper)
+--10233-- REDIR: 0x3d8ae8c420 (libc.so.6:memcpy@GLIBC_2.2.5) redirected to 0x4802720 (_vgnU_ifunc_wrapper)
+--10233-- REDIR: 0x3d8ae8a6b0 (libc.so.6:rindex) redirected to 0x4a0aa30 (rindex)
+--10233-- REDIR: 0x3d8ae82660 (libc.so.6:malloc) redirected to 0x4a07b10 (malloc)
+--10233-- REDIR: 0x3d8ae8b300 (libc.so.6:__GI_strstr) redirected to 0x4a0f030 (__strstr_sse2)
+--10233-- REDIR: 0x3d8ae82d00 (libc.so.6:free) redirected to 0x4a08d80 (free)
+==10233== 
+==10233== HEAP SUMMARY:
+==10233==     in use at exit: 0 bytes in 0 blocks
+==10233==   total heap usage: 1 allocs, 1 frees, 568 bytes allocated
+==10233== 
+==10233== All heap blocks were freed -- no leaks are possible
+==10233== 
+==10233== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==10233== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
