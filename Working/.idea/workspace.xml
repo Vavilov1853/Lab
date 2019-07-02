@@ -12,9 +12,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ad1c907-2af7-41a7-9823-1324718be77a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Laba_2unit/.idea/Laba_2unit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Laba_2unit/.idea/Laba_2unit.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Laba_2unit/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Laba_2unit/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Laba_2unit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Laba_2unit/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b64_d_test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/b64_d_test_file.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/b64_e_test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/b64_e_test_file.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resultd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resultd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,8 +47,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/t1.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2002">
-              <caret line="279" column="26" selection-start-line="279" selection-start-column="26" selection-end-line="279" selection-end-column="26" />
+            <state relative-caret-position="290">
+              <caret line="123" column="24" selection-start-line="123" selection-start-column="20" selection-end-line="123" selection-end-column="24" />
+              <folding>
+                <element signature="e#1#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///usr/include/stdio.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="172" column="8" selection-start-line="172" selection-start-column="8" selection-end-line="172" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -55,6 +73,14 @@
         <option value="CMakeLists.txt" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>more</find>
+      <find>morehelp</find>
+      <find>showuse</find>
+      <find>putc</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -93,6 +119,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -134,16 +161,18 @@
       <workItem from="1561556250661" duration="43000" />
       <workItem from="1561556392198" duration="637000" />
       <workItem from="1561714195584" duration="599000" />
+      <workItem from="1561975809129" duration="1133000" />
+      <workItem from="1562055222422" duration="3386000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1320000" />
+    <option name="totallyTimeSpent" value="5839000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="114" y="25" width="1400" height="985" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26106194" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26843658" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -176,10 +205,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/include/stdio.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="172" column="8" selection-start-line="172" selection-start-column="8" selection-end-line="172" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/t1.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2002">
-          <caret line="279" column="26" selection-start-line="279" selection-start-column="26" selection-end-line="279" selection-end-column="26" />
+        <state relative-caret-position="290">
+          <caret line="123" column="24" selection-start-line="123" selection-start-column="20" selection-end-line="123" selection-end-column="24" />
+          <folding>
+            <element signature="e#1#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
